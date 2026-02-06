@@ -15,6 +15,7 @@ spec:
       containers:
         - name: frontend
           image: colina-frontend:latest
+          imagePullPolicy: IfNotPresent # Corrección para usar imagen local
           ports:
             - containerPort: 80
 ---
