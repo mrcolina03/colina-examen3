@@ -98,7 +98,7 @@ function App() {
     setEditingId(item.id);
     setForm(
       config.fields.reduce((acc, field) => {
-        acc[field.name] = item[field.name] ?? "";
+          acc[field.name] = (item[field.name] !== null && item[field.name] !== undefined) ? item[field.name] : "";
         return acc;
       }, {})
     );
