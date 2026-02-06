@@ -9,5 +9,4 @@ public class ColinaExamen3Application {
     public static void main(String[] args) {
         SpringApplication.run(ColinaExamen3Application.class, args);
     }
-
 }
