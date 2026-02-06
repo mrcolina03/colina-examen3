@@ -60,12 +60,6 @@ docker build -t colina-backend:latest .
 docker build -t colina-frontend:latest ./frontend
 ```
 
-2. Cargar las imágenes en el clúster (ejemplo con kind):
-
-```
-kind load docker-image colina-backend:latest
-kind load docker-image colina-frontend:latest
-```
 
 3. Aplicar manifiestos:
 
@@ -78,7 +72,7 @@ kubectl apply -f k8s/frontend.yaml
 
 ## Evidencias solicitadas
 
-Incluye en tu reporte capturas de pantalla de:
+El reporte incluye reporte capturas de pantalla de:
 
 - Pods en ejecución: `kubectl get pods`
 - Services: `kubectl get services`
